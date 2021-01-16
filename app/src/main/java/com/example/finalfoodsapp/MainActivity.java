@@ -5,10 +5,8 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.finalfoodsapp.adapter.PopularFoodAdapter;
 import com.example.finalfoodsapp.model.PopularFood;
-
 import java.util.ArrayList;
 import java.util.List;
 

@@ -22,12 +22,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        List<PopularFood> popularFoodsList = new ArrayList<>();
-        popularFoodsList.add(new PopularFood("MeatZZa", "$21.99", R.drawable.pizza));
-        popularFoodsList.add(new PopularFood("MeatZZa", "$21.99", R.drawable.pizza));
-        popularFoodsList.add(new PopularFood("MeatZZa", "$21.99", R.drawable.pizza));
+        List<PopularFood> popularFoodList = new ArrayList<>();
+        popularFoodList.add(new PopularFood("MeatZZa", "$21.99", R.drawable.pizza));
+        popularFoodList.add(new PopularFood("MeatZZa", "$21.99", R.drawable.pizza));
+        popularFoodList.add(new PopularFood("MeatZZa", "$21.99", R.drawable.pizza));
 
-        setPopularRecycler(popularFoodsList);
+        setPopularRecycler(popularFoodList);
     }
 
     private void setPopularRecycler(List<PopularFood>popularFoodList){

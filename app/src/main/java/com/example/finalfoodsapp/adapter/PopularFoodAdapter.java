@@ -54,7 +54,6 @@ public class PopularFoodAdapter extends RecyclerView.Adapter<PopularFoodAdapter.
 
         public PopularFoodViewHolder(@NonNull View itemView) {
             super(itemView);
-
             foodImage = itemView.findViewById(R.id.food_image);
             price = itemView.findViewById(R.id.price);
             name = itemView.findViewById(R.id.name);

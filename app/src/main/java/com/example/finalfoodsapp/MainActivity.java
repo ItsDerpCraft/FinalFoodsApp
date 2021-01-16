@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
 
         List<PopularFood> popularFoodsList = new ArrayList<>();
         popularFoodsList.add(new PopularFood("MeatZZa", "$21.99", R.drawable.pizza));
+        popularFoodsList.add(new PopularFood("MeatZZa", "$21.99", R.drawable.pizza));
+        popularFoodsList.add(new PopularFood("MeatZZa", "$21.99", R.drawable.pizza));
 
         setPopularRecycler(popularFoodsList);
     }

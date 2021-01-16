@@ -36,5 +36,21 @@
         android:background="#00FFFFFF"
         tools:srcCompat="@drawable/search" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="monospace"
+        android:textSize="26sp"
+        android:text="Most Popular" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/popular_food_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="150dp" />
+
 
 </RelativeLayout>

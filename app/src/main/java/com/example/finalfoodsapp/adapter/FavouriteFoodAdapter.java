@@ -1,6 +1,7 @@
 package com.example.finalfoodsapp.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.finalfoodsapp.FoodDetails;
 import com.example.finalfoodsapp.R;
 import com.example.finalfoodsapp.model.FavouriteFood;
 
@@ -37,6 +39,19 @@ public class FavouriteFoodAdapter extends RecyclerView.Adapter<FavouriteFoodAdap
         holder.foodImage.setImageResource(favouriteFoodList.get(position).getImageUrl());
         holder.name.setText(favouriteFoodList.get(position).getName());
         holder.price.setText(favouriteFoodList.get(position).getPrice());
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(context, FoodDetails.class);
+                i.putExtra("name", favouriteFoodList.get(position).getName());
+                i.putExtra("price", favouriteFoodList.get(position).getPrice());
+                i.putExtra("rating", favouriteFoodList.get(position).getRating());
+                i.putExtra("image", favouriteFoodList.get(position).getImageUrl());
+
+                context.startActivity(i);
+            }
+        });
 
     }
 

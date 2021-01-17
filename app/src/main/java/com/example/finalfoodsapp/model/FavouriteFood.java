@@ -3,11 +3,13 @@ package com.example.finalfoodsapp.model;
 public class FavouriteFood {
     String name;
     String price;
+    String rating;
     Integer imageUrl;
 
-    public FavouriteFood(String name, String price, Integer imageUrl) {
+    public FavouriteFood(String name, String price, String rating, Integer imageUrl) {
         this.name = name;
         this.price = price;
+        this.rating = rating;
         this.imageUrl = imageUrl;
     }
 
@@ -22,4 +24,6 @@ public class FavouriteFood {
     public Integer getImageUrl() {
         return imageUrl;
     }
+
+    public String getRating() { return rating; }
 }

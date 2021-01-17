@@ -34,11 +34,12 @@ public class MainActivity extends AppCompatActivity {
         setPopularRecycler(popularFoodList);
 
         List<FavouriteFood> favouriteFoodList = new ArrayList<>();
-        favouriteFoodList.add(new FavouriteFood("MeatZZa", "$21.99", R.drawable.pizza));
+
+
         setFavouriteRecycler(favouriteFoodList);
 
         List<AgainFood> againFoodList = new ArrayList<>();
-        againFoodList.add(new AgainFood("MeatZZa", "$21.99", R.drawable.pizza));
+        againFoodList.add(new AgainFood("MeatZZa", "$21.99", "4.5", R.drawable.pizza));
         setAgainRecycler(againFoodList);
     }
 
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setAgainRecycler(List<AgainFood>againFoodList){
         againRecycler = findViewById(R.id.again_food_recycler);
-        RecyclerView.LayoutManager  layoutManager = new LinearLayoutManager(this,RecyclerView.HORIZONTAL, false);
+        RecyclerView.LayoutManager  layoutManager = new LinearLayoutManager(this,RecyclerView.VERTICAL, false);
         againRecycler.setLayoutManager(layoutManager);
         againFoodAdapter= new AgainFoodAdapter(this,againFoodList);
         againRecycler.setAdapter(againFoodAdapter);

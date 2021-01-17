@@ -37,6 +37,7 @@ public class PopularFoodAdapter extends RecyclerView.Adapter<PopularFoodAdapter.
         holder.foodImage.setImageResource(popularFoodList.get(position).getImageUrl());
         holder.name.setText(popularFoodList.get(position).getName());
         holder.price.setText(popularFoodList.get(position).getPrice());
+        holder.rating.setText(popularFoodList.get(position).getRating());
 
     }
 
@@ -49,7 +50,7 @@ public class PopularFoodAdapter extends RecyclerView.Adapter<PopularFoodAdapter.
     public static final class PopularFoodViewHolder extends RecyclerView.ViewHolder{
 
         ImageView foodImage;
-        TextView price, name;
+        TextView price, name, rating;
 
 
         public PopularFoodViewHolder(@NonNull View itemView) {
@@ -57,6 +58,7 @@ public class PopularFoodAdapter extends RecyclerView.Adapter<PopularFoodAdapter.
             foodImage = itemView.findViewById(R.id.food_image);
             price = itemView.findViewById(R.id.price);
             name = itemView.findViewById(R.id.name);
+            rating = itemView.findViewById(R.id.rating);
         }
     }
 

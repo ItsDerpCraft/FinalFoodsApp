@@ -9,37 +9,38 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="60dp"
         android:background="#0D739E" />
 
     <ImageButton
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginLeft="10dp"
         android:background="#00FFFFFF"
         android:src="@drawable/ic_baseline_menu_24"
         android:tint="#000000" />
 
     <ImageButton
         android:layout_width="320dp"
-        android:layout_height="70dp"
-        android:layout_marginLeft="80dp"
-        android:layout_marginTop="15dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="10dp"
         android:background="#00FFFFFF"
         android:src="@drawable/rectangle" />
 
     <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginLeft="85dp"
-        android:layout_marginTop="25dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="10dp"
         android:background="#00FFFFFF"
         tools:srcCompat="@drawable/search" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="110dp"
+        android:layout_marginTop="60dp"
         android:layout_marginLeft="5dp"
         android:fontFamily="monospace"
         android:textSize="26sp"
@@ -50,7 +51,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="150dp" />
+        android:layout_marginTop="100dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="monospace"
+        android:textSize="26sp"
+        android:text="Favourites" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favourite_food_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="300dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="450dp"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="monospace"
+        android:textSize="26sp"
+        android:text="Order Again" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/again_food_recycler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="490dp" />
 
 
 </RelativeLayout>

@@ -1,16 +1,14 @@
 package com.example.finalfoodsapp.model;
 
-public class PopularFood {
+public class FavouriteFood {
     String name;
     String price;
-    String rating;
     Integer imageUrl;
 
-    public PopularFood(String name, String price, String rating, Integer imageUrl) {
+    public FavouriteFood(String name, String price, Integer imageUrl) {
         this.name = name;
         this.price = price;
         this.imageUrl = imageUrl;
-        this.rating = rating;
     }
 
     public String getName() {
@@ -23,9 +21,5 @@ public class PopularFood {
 
     public Integer getImageUrl() {
         return imageUrl;
-    }
-
-    public String getRating() {
-        return rating;
     }
 }

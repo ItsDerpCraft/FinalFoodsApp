@@ -56,7 +56,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="260dp"
+        android:layout_marginTop="250dp"
         android:layout_marginLeft="5dp"
         android:fontFamily="monospace"
         android:textSize="26sp"
@@ -67,12 +67,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="300dp" />
+        android:layout_marginTop="290dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="450dp"
+        android:layout_marginTop="440dp"
         android:layout_marginLeft="5dp"
         android:fontFamily="monospace"
         android:textSize="26sp"
@@ -83,7 +83,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="490dp" />
+        android:layout_marginTop="480dp" />
 
 
 </RelativeLayout>

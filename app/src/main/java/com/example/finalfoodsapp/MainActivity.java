@@ -66,6 +66,4 @@ public class MainActivity extends AppCompatActivity {
         againFoodAdapter= new AgainFoodAdapter(this,againFoodList);
         againRecycler.setAdapter(againFoodAdapter);
     }
-
-
 }

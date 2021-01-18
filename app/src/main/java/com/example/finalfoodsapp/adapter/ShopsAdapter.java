@@ -49,10 +49,10 @@ public class ShopsAdapter extends RecyclerView.Adapter<ShopsAdapter.ShopsViewHol
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(context, FoodDetails.class);
-                i.putExtra("shopDistance", shopsList.get(position).getDistance());
                 i.putExtra("foodName", R.id.detail_name);
                 i.putExtra("foodImageUrl", R.id.detail_image);
                 i.putExtra("foodPrice", R.id.detail_price);
+                i.putExtra("amount", "1");
                 context.startActivity(i);
             }
         });

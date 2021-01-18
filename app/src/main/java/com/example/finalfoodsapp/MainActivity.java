@@ -1,7 +1,11 @@
 package com.example.finalfoodsapp;
 
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -41,6 +45,14 @@ public class MainActivity extends AppCompatActivity {
         List<AgainFood> againFoodList = new ArrayList<>();
         againFoodList.add(new AgainFood("MeatZZa", "$21.99", "4.5", R.drawable.pizza));
         setAgainRecycler(againFoodList);
+
+        ImageButton cartButton = (ImageButton) findViewById(R.id.cart_button);
+        cartButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCartActivity();
+            }
+        });
     }
 
     private void setPopularRecycler(List<PopularFood>popularFoodList){
@@ -65,6 +77,11 @@ public class MainActivity extends AppCompatActivity {
         againRecycler.setLayoutManager(layoutManager);
         againFoodAdapter= new AgainFoodAdapter(this,againFoodList);
         againRecycler.setAdapter(againFoodAdapter);
+    }
+
+    public void openCartActivity(){
+        Intent intent = new Intent(this, Cart.class);
+        startActivity(intent);
     }
 
     //Cart not functional;

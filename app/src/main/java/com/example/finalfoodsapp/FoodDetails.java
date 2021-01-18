@@ -63,10 +63,23 @@ public class FoodDetails extends AppCompatActivity {
                 openMainActivity();
             }
         });
+
+        ImageButton cartButton = (ImageButton) findViewById(R.id.cart_detail_button);
+        cartButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openCartActivity();
+            }
+        });
     }
 
     public void openMainActivity(){
         Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void openCartActivity(){
+        Intent intent = new Intent(this, Cart.class);
         startActivity(intent);
     }
 

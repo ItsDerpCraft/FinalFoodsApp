@@ -27,9 +27,6 @@ public class Cart extends AppCompatActivity {
     TextView total;
     List<CartModel> cartModelList;
 
-    SharedPreferences sharedPreferences;
-    public static final String SHARED_PREFS = "sharedPrefs";
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,8 +45,6 @@ public class Cart extends AppCompatActivity {
         price = intent.getStringExtra("foodPrice");
         imageUrl = intent.getIntExtra("foodImageUrl", 0);
         amount = intent.getStringExtra("amount");
-        total = findViewById(R.id.price);
-
 
         cartModelList = new ArrayList<>();
         cartModelList.add(new CartModel(name, price, amount, imageUrl));

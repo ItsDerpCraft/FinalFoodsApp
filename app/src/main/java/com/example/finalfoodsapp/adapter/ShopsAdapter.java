@@ -11,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.finalfoodsapp.Cart;
 import com.example.finalfoodsapp.FoodDetails;
 import com.example.finalfoodsapp.R;
 import com.example.finalfoodsapp.model.AgainFood;
@@ -48,7 +49,7 @@ public class ShopsAdapter extends RecyclerView.Adapter<ShopsAdapter.ShopsViewHol
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(context, FoodDetails.class);
+                Intent i = new Intent(context, Cart.class);
                 i.putExtra("foodName", R.id.detail_name);
                 i.putExtra("foodImageUrl", R.id.detail_image);
                 i.putExtra("foodPrice", R.id.detail_price);
@@ -80,5 +81,6 @@ public class ShopsAdapter extends RecyclerView.Adapter<ShopsAdapter.ShopsViewHol
             workTime = itemView.findViewById(R.id.workTime);
         }
     }
+
 
 }

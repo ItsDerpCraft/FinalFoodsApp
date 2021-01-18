@@ -42,8 +42,8 @@ public class FoodDetails extends AppCompatActivity {
         imageUrl = intent.getIntExtra("image", 0);
 
         imageView = findViewById(R.id.detail_image);
-        itemName = findViewById(R.id.name);
-        itemPrice = findViewById(R.id.price);
+        itemName = findViewById(R.id.detail_name);
+        itemPrice = findViewById(R.id.detail_price);
         itemRating = findViewById(R.id.rating);
 
         imageView.setImageResource(imageUrl);
